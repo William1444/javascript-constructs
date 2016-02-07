@@ -1,0 +1,22 @@
+{
+  "name": "javascript-structure",
+  "description": "some javascript constructs",
+  "main": "test.html",
+  "moduleType": [],
+  "authors": [
+    "william lacy <william.lacy@hotmail.co.uk>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jasmine-core": "jasmine#^2.4.1",
+    "requirejs": "^2.1.22"
+  }
+}

@@ -1,0 +1,5 @@
+.idea
+bower_components
+javascript-structure.iml
+npm-debug.log
+node_modules
