@@ -25,7 +25,15 @@
 
     <script type="text/javascript">
         window.addEventListener("load", function onLoad() {
-            var jasmineEnv = jasmine.getEnv();
+
+            debugger;
+            var jasmineEnv = jasmine.getEnv(),
+                    reporter = new jasmine.HtmlReporter();
+            // no opts throws an error when creating HtmlReporter.. however fixing this error causes an error with the
+            // spies, which blows up the tests... so regretfully leaving it here till I have retired with ample of free
+            // time to mes with this stuff!
+
+            jasmineEnv.addReporter(reporter);
             setTimeout(function () {
                 jasmineEnv.execute();
                 // Without this setTimeout, the specs don't always get execute in webKit browsers, I don't know why

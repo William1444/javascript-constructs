@@ -10,7 +10,7 @@ describe('#factorial', function () {
     });
 });
 
-function factorial2(num) {
+function factorial(num) {
     var res = 1;
     return (function factor(n) {
         if (n === 1) {
