@@ -16,7 +16,6 @@ BinarySearchArray.prototype.search = function(int,minIndex,maxIndex) {
 	minIndex = minIndex || 0;
 	maxIndex = maxIndex || this.arr.length;
 	var index = Math.floor((maxIndex - minIndex)/2) + minIndex;
-	debugger;
 	if (this.arr[index] === int) return index;
 	else if (this.arr[index] === this.arr.length || this.arr[index] === 0) return undefined;
 	else if (this.arr[index] < int) return this.search(int,index+1,maxIndex);

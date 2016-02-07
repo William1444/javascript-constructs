@@ -13,9 +13,10 @@
     <script type="text/javascript" src="/bower_components/requirejs/require.js"></script>
 
     <!-- include source files here... -->
-    <!--<script type="text/javascript" src="src/HelloWorld.js"></script>-->
+    <script type="text/javascript" src="specs/example-code/matrix-rotater.js"></script>
 
     <!-- include spec files here... -->
+    <script type="text/javascript" src="specs/bitwise.js"></script>
     <script type="text/javascript" src="specs/recursion.js"></script>
     <script type="text/javascript" src="specs/data-structures/queue.js"></script>
     <script type="text/javascript" src="specs/data-structures/simple-linked-list.js"></script>
@@ -26,7 +27,6 @@
     <script type="text/javascript">
         window.addEventListener("load", function onLoad() {
 
-            debugger;
             var jasmineEnv = jasmine.getEnv(),
                     reporter = new jasmine.HtmlReporter();
             // no opts throws an error when creating HtmlReporter.. however fixing this error causes an error with the
